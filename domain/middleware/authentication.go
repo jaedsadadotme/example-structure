@@ -23,7 +23,6 @@ func AuthenticationFilter(c *fiber.Ctx) error {
 	}
 
 	dto.UserId = fmt.Sprintf("%s", user_info["id"])
-	dto.AirlineId = fmt.Sprintf("%s", user_info["airline_id"])
 
 	return c.Next()
 }

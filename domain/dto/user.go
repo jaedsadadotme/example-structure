@@ -5,8 +5,7 @@ import (
 )
 
 var (
-	UserId    string
-	AirlineId string
+	UserId string
 )
 
 type UserDTO struct {
