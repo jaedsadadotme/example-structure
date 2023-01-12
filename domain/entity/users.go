@@ -9,3 +9,7 @@ type UserEntity struct {
 	Firstname string    `gorm:"firstname" json:"firstname"`
 	Lastname  string    `gorm:"lastname" json:"lastname"`
 }
+
+func (UserEntity) TableName() string {
+	return "users"
+}
